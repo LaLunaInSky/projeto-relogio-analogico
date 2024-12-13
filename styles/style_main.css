@@ -29,7 +29,6 @@
     /*Tamanhos*/
     --tamanhoRelógio: 350px;
     --tamanhUmQuartoTamanhoRelógio: calc(((var(--tamanhoRelógio) - 25px) / 3));
-    --tamanhoMeioRelógio: 20px;
 }
 
 html, body {
@@ -46,15 +45,25 @@ main {
 }
 
 .mostradorRelógio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
     border: 10px solid var(--preto01);
     width: var(--tamanhoRelógio);
     height: var(--tamanhoRelógio);
     background-color: var(--branco06);
-    box-shadow: inset 5px 5px 10px 5px rgba(0, 0, 0, 0.342);
+}
+
+.traçadosHorários {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ponteirosRelógio {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    rotate: 180deg;
 }
 
 .traçoHoras {
@@ -238,9 +247,38 @@ main {
     /*bottom - right*/
 }
 
+
+.ponteiroSegundos {
+    position: absolute;
+    width: 2px;
+    height: 165px;
+    background-color: red;
+    rotate: 350deg;
+    transform-origin: 0% 0%;
+}
+
+.ponteiroMinutos {
+    position: absolute;
+    width: 6px;
+    height: 150px;
+    background-color: var(--preto01);
+    rotate: 250deg;
+    transform-origin: 0% 0%;
+
+}
+
+.ponteiroHoras {
+    position: absolute;
+    width: 10px;
+    height: 140px;
+    background-color: var(--preto01);
+    transform-origin: 50% 0%;
+}
+
 .meioRelógio {
-    width: var(--tamanhoMeioRelógio);
-    height: var(--tamanhoMeioRelógio);
+    position: absolute;
+    width: 20px;
+    height: 20px;
     background-color: var(--preto01);
     border-radius: 50%;
 }
