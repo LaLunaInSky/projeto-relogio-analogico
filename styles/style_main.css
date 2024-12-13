@@ -253,7 +253,6 @@ main {
     width: 2px;
     height: 165px;
     background-color: red;
-    rotate: 350deg;
     transform-origin: 0% 0%;
 }
 
@@ -262,7 +261,6 @@ main {
     width: 6px;
     height: 150px;
     background-color: var(--preto01);
-    rotate: 250deg;
     transform-origin: 0% 0%;
 
 }

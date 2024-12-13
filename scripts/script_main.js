@@ -3,10 +3,12 @@
 let ponteiroHoras = document.querySelector('.ponteiroHoras')
 let ponteiroMinutos = document.querySelector('.ponteiroMinutos')
 let ponteiroSegundos =  document.querySelector('.ponteiroSegundos')
-
-let rotaçãoPonteiroHora = 0
-let rotaçãoPonteiroMinuto = 0
-let rotaçãoPonteiroSegundo = 0
+let segundo = 0
+let minuto = 0
+let hora = 0
+let rotaçãoPonteiroHora = hora
+let rotaçãoPonteiroMinuto = minuto
+let rotaçãoPonteiroSegundo = segundo
 
 function setarPonteiros() {
     ponteiroHoras.style.rotate = `${rotaçãoPonteiroHora}deg`;
@@ -19,9 +21,6 @@ function setarPonteiros() {
 
 
 function começarRológio() {
-let segundo = 1
-let minuto = 0
-let hora = 0
 
 
 }
