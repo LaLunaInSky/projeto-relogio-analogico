@@ -103,15 +103,15 @@ main {
 
 #hora4 {
     transform: rotate(120deg);
-    margin-top: ;
-    margin-left: ;
+    margin-top: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
+    margin-left: calc(var(--tamanhoRelógio) - 40px);
     /*top - left*/
 }
 
 #hora5 {
     transform: rotate(150deg);
-    margin-top: ;
-    margin-left: ;
+    margin-top: calc(var(--tamanhoRelógio) - 40px);
+    margin-left: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
     /*top  - left*/
 }
 
