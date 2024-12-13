@@ -68,29 +68,49 @@ main {
 .traçoMeiaHora {
     position: absolute;
     background-color: var(--preto01);
-    width: 6px;
-    height: 20px;
+    width: 7px;
+    height: 25px;
 }
 
 #hora0_12 {
     margin-bottom: var(--tamanhoRelógio);
     margin-left: 25px;
     margin-right: 25px;
-    /*bottom 350px - left 25px*/
+}
+
+#meiaHora0 {
+    transform: rotate(15deg);
+    margin-bottom: calc(var(--tamanhoRelógio) - 20px);
+    margin-left: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 150px);
+    /*bottom - left*/
 }
 
 #hora1 {
     transform: rotate(30deg);
     margin-bottom: calc(var(--tamanhoRelógio) - 40px);
     margin-left: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
-    /*bottom 75% left 50%*/
+    /*bottom - left*/
+}
+
+#meiaHora1 {
+    transform: rotate(45deg);
+    margin-bottom: calc(var(--tamanhoRelógio) - 105px);
+    margin-left: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio));
+    /*bottom - left*/
 }
 
 #hora2 {
     transform: rotate(60deg);
     margin-bottom: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
     margin-left: calc(var(--tamanhoRelógio) - 40px);
-    /*bottom 50% left 75%*/
+    /*bottom - left*/
+}
+
+#meiaHora2 {
+    transform: rotate(75deg);
+    margin-bottom: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 150px);
+    margin-left: calc(var(--tamanhoRelógio) - 20px);
+    /*bottom - left*/
 }
 
 #hora3 {
@@ -98,7 +118,13 @@ main {
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: var(--tamanhoRelógio);
-    /*bottom 25px - left 350px*/
+}
+
+#meiaHora3 {
+    transform: rotate(105deg);
+    margin-top: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 150px);
+    margin-left: calc(var(--tamanhoRelógio) - 20px);
+    /*top - left*/
 }
 
 #hora4 {
@@ -108,11 +134,25 @@ main {
     /*top - left*/
 }
 
+#meiaHora4 {
+    transform: rotate(135deg);
+    margin-top: calc(var(--tamanhoRelógio) - 105px);
+    margin-left: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio));
+    /*top - left*/
+}
+
 #hora5 {
     transform: rotate(150deg);
     margin-top: calc(var(--tamanhoRelógio) - 40px);
     margin-left: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
-    /*top  - left*/
+    /*top - left*/
+}
+
+#meiaHora5 {
+    transform: rotate(165deg);
+    margin-top: calc(var(--tamanhoRelógio) - 20px);
+    margin-left: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 150px);
+    /*top - left*/
 }
 
 #hora6 {
@@ -121,18 +161,39 @@ main {
     margin-right: 25px;
 }
 
+#meiaHora6 {
+    transform: rotate(195deg);
+    margin-top: calc(var(--tamanhoRelógio) - 20px);
+    margin-right: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 150px);
+    /*top - right*/
+}
+
 #hora7 {
     transform: rotate(210deg);
     margin-top: calc(var(--tamanhoRelógio) - 40px);
     margin-right: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
-    /*top - left*/
+    /*top - right*/
+}
+
+#meiaHora7 {
+    transform: rotate(225deg);
+    margin-top: calc(var(--tamanhoRelógio) - 105px);
+    margin-right: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio));
+    /*top - right*/
 }
 
 #hora8 {
     transform: rotate(240deg);
     margin-top: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
     margin-right: calc(var(--tamanhoRelógio) - 40px);
-    /*top  - left*/
+    /*top - right*/
+}
+
+#meiaHora8 {
+    transform: rotate(255deg);
+    margin-top: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 150px);
+    margin-right: calc(var(--tamanhoRelógio) - 20px);
+    /*top - right*/
 }
 
 #hora9 {
@@ -142,18 +203,39 @@ main {
     margin-right: var(--tamanhoRelógio);
 }
 
-#hora10 {
-    transform: rotate(330deg);
-    margin-bottom: calc(var(--tamanhoRelógio) - 40px);
-    margin-right: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
-    /*top - left*/
+#meiaHora9 {
+    transform: rotate(285deg);
+    margin-bottom: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 150px);
+    margin-right: calc(var(--tamanhoRelógio) - 20px);
+    /*bottom - right*/
 }
 
-#hora11 {
+#hora10 {
     transform: rotate(300deg);
     margin-bottom: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
     margin-right: calc(var(--tamanhoRelógio) - 40px);
-    /*top  - left*/
+    /*bottom - right*/
+}
+
+#meiaHora10 {
+    transform: rotate(315deg);
+    margin-bottom: calc(var(--tamanhoRelógio) - 105px);
+    margin-right: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio));
+    /*bottom - right*/
+}
+
+#hora11 {
+    transform: rotate(330deg);
+    margin-bottom: calc(var(--tamanhoRelógio) - 40px);
+    margin-right: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
+    /*bottom - right*/
+}
+
+#meiaHora11 {
+    transform: rotate(345deg);
+    margin-bottom: calc(var(--tamanhoRelógio) - 20px);
+    margin-right: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 150px);
+    /*bottom - right*/
 }
 
 .meioRelógio {
