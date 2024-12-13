@@ -121,6 +121,20 @@ main {
     margin-right: 25px;
 }
 
+#hora7 {
+    transform: rotate(210deg);
+    margin-top: calc(var(--tamanhoRelógio) - 40px);
+    margin-right: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
+    /*top - left*/
+}
+
+#hora8 {
+    transform: rotate(240deg);
+    margin-top: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
+    margin-right: calc(var(--tamanhoRelógio) - 40px);
+    /*top  - left*/
+}
+
 #hora9 {
     transform: rotate(90deg);
     margin-top: 25px;
@@ -128,6 +142,19 @@ main {
     margin-right: var(--tamanhoRelógio);
 }
 
+#hora10 {
+    transform: rotate(330deg);
+    margin-bottom: calc(var(--tamanhoRelógio) - 40px);
+    margin-right: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
+    /*top - left*/
+}
+
+#hora11 {
+    transform: rotate(300deg);
+    margin-bottom: calc(var(--tamanhoRelógio) - var(--tamanhUmQuartoTamanhoRelógio) - 50px);
+    margin-right: calc(var(--tamanhoRelógio) - 40px);
+    /*top  - left*/
+}
 
 .meioRelógio {
     width: var(--tamanhoMeioRelógio);
