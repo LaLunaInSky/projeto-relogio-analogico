@@ -247,7 +247,6 @@ main {
     /*bottom - right*/
 }
 
-
 .ponteiroSegundos {
     position: absolute;
     width: 2px;
@@ -260,8 +259,8 @@ main {
     position: absolute;
     width: 6px;
     height: 150px;
-    background-color: var(--preto01);
-    transform-origin: 0% 0%;
+    background-color: var(--preto05);
+    transform-origin: 50% 0%;
 
 }
 
