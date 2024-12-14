@@ -1,31 +1,24 @@
 "use strict"
 
-let ponteiroHoras = document.querySelector('.ponteiroHoras')
-let ponteiroMinutos = document.querySelector('.ponteiroMinutos')
-let ponteiroSegundos =  document.querySelector('.ponteiroSegundos')
-
-let segundo = 0
-let minuto = 0
-let hora = 0
-let rotaçãoPonteiroHora = 0
-let rotaçãoPonteiroMinuto = 0
-let rotaçãoPonteiroSegundo = 0
-
 function rodarPonteiros() {
+    let ponteiroHoras = document.querySelector('.ponteiroHoras')
+    let ponteiroMinutos = document.querySelector('.ponteiroMinutos')
+    let ponteiroSegundos =  document.querySelector('.ponteiroSegundos')
+    
     let date= new Date()
     let abbrÚnico = document.querySelector('abbr')
 
-    segundo =  date.getSeconds()
-    minuto = date.getMinutes()
-    hora = date.getHours()
+    let segundo =  date.getSeconds()
+    let minuto = date.getMinutes()
+    let hora = date.getHours()
     
-    rotaçãoPonteiroSegundo = (segundo * 360) / 60
+    let rotaçãoPonteiroSegundo = (segundo * 360) / 60
     ponteiroSegundos.style.rotate = `${rotaçãoPonteiroSegundo}deg`;
 
-    rotaçãoPonteiroHora = (hora * 30)
+    let rotaçãoPonteiroHora = (hora * 30)
     ponteiroHoras.style.rotate = `${rotaçãoPonteiroHora}deg`
 
-    rotaçãoPonteiroMinuto = (minuto * 0.5) + rotaçãoPonteiroHora
+    let rotaçãoPonteiroMinuto = (minuto * 0.5) + rotaçãoPonteiroHora
     ponteiroMinutos.style.rotate = `${rotaçãoPonteiroMinuto}deg`
 
     if (segundo < 10) {
@@ -57,9 +50,6 @@ function rodarPonteiros() {
             }
         }
     }
-
-    console.log(`${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`)
 }
-
 
 setInterval(rodarPonteiros, 1000)
