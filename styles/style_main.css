@@ -8,7 +8,7 @@
 }
 
 :root {
-    /*color-scheme: light dark;*/
+    color-scheme: light dark;
 
     /*Paleta de Sombras do Branco*/
     --branco01: #FFFFFF;
@@ -32,7 +32,7 @@
 }
 
 html, body {
-    background-color: var(--branco03);
+    background-color: light-dark(var(--branco02), var(--preto02));
 }
 
 main {
@@ -46,10 +46,10 @@ main {
 
 .mostradorRelógio {
     border-radius: 50%;
-    border: 10px solid var(--preto01);
+    border: 10px solid light-dark(var(--branco06), var(--preto01));
     width: var(--tamanhoRelógio);
     height: var(--tamanhoRelógio);
-    background-color: var(--branco06);
+    background-color: light-dark(var(--branco01), var(--preto04));
 }
 
 .traçadosHorários {
@@ -68,7 +68,7 @@ main {
 
 .traçoHoras {
     position: absolute;
-    background-color: var(--preto01);
+    background-color: light-dark(var(--branco06), var(--preto01));
     margin: 25px;
     width: 8px;
     height: 30px;
@@ -76,7 +76,7 @@ main {
 
 .traçoMeiaHora {
     position: absolute;
-    background-color: var(--preto01);
+    background-color: light-dark(var(--branco06), var(--preto01));
     width: 7px;
     height: 25px;
 }
@@ -259,7 +259,7 @@ main {
     position: absolute;
     width: 6px;
     height: 150px;
-    background-color: var(--preto05);
+    background-color: light-dark(var(--branco05), var(--preto02));
     transform-origin: 50% 0%;
 
 }
@@ -268,7 +268,7 @@ main {
     position: absolute;
     width: 10px;
     height: 140px;
-    background-color: var(--preto01);
+    background-color: light-dark(var(--branco06), var(--preto01));
     transform-origin: 50% 0%;
 }
 
@@ -276,6 +276,6 @@ main {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: var(--preto01);
+    background-color: light-dark(var(--branco06), var(--preto01));
     border-radius: 50%;
 }
