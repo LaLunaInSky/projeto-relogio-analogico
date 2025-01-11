@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    /*Paleta de Sombras do Branco*/
+    --branco01: #FFFFFF;
+    --branco02: #F6F6F6;
+    --branco03: #D4D4D4;
+    --branco04: #B3B3B3;
+    --branco05: #919191;
+    --branco06: #6F6F6F;
+
+    /*Paleta de Sombras do Preto*/
+    --preto01: #000000;
+    --preto02: #3C3C3C;
+    --preto03: #5E5E5E;
+    --preto04: #808080;
+    --preto05: #A2A2A2;
+    --preto06: #C3C3C3;
+
+    /*Tamanhos*/
+    --tamanhoRelógio: 350px;
+    --tamanhUmQuartoTamanhoRelógio: calc(((var(--tamanhoRelógio) - 25px) / 3));
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    display: none;
+}
+
+@media (min-width:320px)  {
+    body {
+        display: block;
+    }
+    
+    main {
+        height: 100vh;
+        background-color: var(--preto04);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mostradorRelógio {
+        width: 300px;
+        height: 300px;
+        background-color: var(--preto06);
+        border: 10px solid var(--preto01);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .meioRelógio {
+        width: 20px;
+        height: 20px;
+        background-color: var(--preto01);
+        border-radius: 50%;
+    }
+    
+}
+
+@media (min-width:480px)  {
+    .mostradorRelógio {
+        width: 480px;
+        height: 480px;
+    }
+
+    .meioRelógio {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (min-width:801px)  {
+    .mostradorRelógio {
+        width: 580px;
+        height: 580px;
+    }
+}
