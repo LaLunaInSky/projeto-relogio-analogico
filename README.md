@@ -1,1 +1,1 @@
-Para acessar a página deste projeto [Clique Aqui!](https://lalunainsky.github.io/projeto-relogio-analogico/)
+Para acessar a página deste projeto [Clique Aqui!](https://lalunainsky.com/projeto-relogio-analogico/)

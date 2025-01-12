@@ -66,6 +66,7 @@ body {
         position: absolute;
         background-color: transparent;
         display: flex;
+        align-items: center;
         justify-content: space-between;
         
     }
@@ -126,6 +127,61 @@ body {
         transform: rotate(-75deg);
     }
 
+    .ponteiroSegundos {
+        width: 50%;
+        height: 40%;
+        display: flex;
+
+        &>div:nth-child(1) {
+            width: 35%;
+            height: 100%;
+        }
+
+        &>div:nth-child(2) {
+            width: 65%;
+            height: 100%;
+            background-color: red;
+        }
+    }
+
+    .ponteiroMinutos {
+        width: 50%;
+        height: 60%;
+        display: flex;
+        
+        &>div:nth-child(1) {
+            width: 30%;
+            height: 100%;
+        }
+        
+        &>div:nth-child(2) {
+            width: 70%;
+            height: 100%;
+            background-color: var(--preto01);
+        }
+    }
+    
+    .ponteiroHoras {
+        width: 50%;
+        height: 85%;
+        display: flex;
+        
+        &>div:nth-child(1) {
+            width: 20%;
+            height: 100%;
+        }
+        
+        &>div:nth-child(2) {
+            width: 80%;
+            height: 100%;
+            background-color: var(--preto01);
+        }
+    }
+    
+    #segundos, #minutos, #horas {
+        rotate: 90deg;
+    }
+
     .meioRelógio {
         position: absolute;
         width: 20px;
@@ -133,7 +189,6 @@ body {
         background-color: var(--preto01);
         border-radius: 50%;
     }
-    
 }
 
 @media (min-width:480px)  {
