@@ -63,6 +63,7 @@ body {
     .traço {
         width: 300px;
         height: 10px;
+        position: absolute;
         background-color: transparent;
         display: flex;
         justify-content: space-between;
@@ -74,30 +75,55 @@ body {
         height: 100%;
         background-color: var(--preto01);
     }
+
+    .traçoMeiaHora {
+        width: 15px;
+        height: 70%;
+        background-color: var(--preto01);
+    }
     
     #h1 {
-        position: absolute;
         transform: rotate(90deg);
     }
 
     #h2 {
-        position: absolute;
         transform: rotate(30deg);
     }
 
     #h3 {
-        position: absolute;
         transform: rotate(-30deg);
     }
 
     #h4 {
-        position: absolute;
         transform: rotate(60deg);
     }
 
     #h5 {
-        position: absolute;
         transform: rotate(-60deg);
+    }
+
+    #meiaH1 {
+        transform: rotate(15deg);
+    }
+
+    #meiaH2 {
+        transform: rotate(45deg);
+    }
+    
+    #meiaH3 {
+        transform: rotate(75deg);
+    }
+
+    #meiaH4 {
+        transform: rotate(-15deg);
+    }
+
+    #meiaH5 {
+        transform: rotate(-45deg);
+    }
+    
+    #meiaH6 {
+        transform: rotate(-75deg);
     }
 
     .meioRelógio {
@@ -125,6 +151,10 @@ body {
         width: 35px;
     }
 
+    .traçoMeiaHora {
+        width: 25px;
+    }
+
     .meioRelógio {
         width: 30px;
         height: 30px;
@@ -139,6 +169,10 @@ body {
 
     .traçoHora {
         width: 40px;
+    }
+
+    .traçoMeiaHora {
+        width: 30px;
     }
     
     .mostradorRelógio {
